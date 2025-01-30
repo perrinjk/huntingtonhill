@@ -18,6 +18,7 @@ def huntington_hill_apportionment(total_reps, input_file, output_file):
 
     # main apportionment
     for _ in range(total_reps - len(states)):
+        
         # find highest priority state
         max_index = priorities.index(max(priorities))
         reps[max_index] += 1
